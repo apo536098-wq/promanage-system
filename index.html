@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProManage | Görev Yönetim Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <h2>ProManage</h2>
+                <p>Hoş geldin, Planlayıcı</p>
+            </div>
+            <nav>
+                <button class="nav-btn active" data-filter="all"><i class="fas fa-tasks"></i> Tüm Görevler</button>
+                <button class="nav-btn" data-filter="completed"><i class="fas fa-check-circle"></i> Tamamlananlar</button>
+                <button class="nav-btn" data-filter="pending"><i class="fas fa-clock"></i> Bekleyenler</button>
+            </nav>
+        </aside>
+
+        <main>
+            <header>
+                <input type="text" id="taskInput" placeholder="Yeni bir görev ekle...">
+                <button id="addBtn"><i class="fas fa-plus"></i> Ekle</button>
+            </header>
+
+            <section class="task-list" id="taskList">
+                </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
